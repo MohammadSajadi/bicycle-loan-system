@@ -1,5 +1,5 @@
-const prisma = require('../db.js');
-const { createJWT, hashPassword } = require("../modules/auth");
+const prisma = require('../db');
+const { createJWT, hashPassword, comparePasswords } = require("../modules/auth");
 
 const createNewUser = async (req, res) => {
   const hash = await hashPassword(req.body.password);
@@ -17,7 +17,7 @@ const createNewUser = async (req, res) => {
 
 const signin = async (req, res) => {
     const user = await prisma.user.findUnique({
-      where: { id: req.body.username },
+      where: { username: req.body.username },
     });
   
     const isValid = await comparePasswords(req.body.password, user.password);
