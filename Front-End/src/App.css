@@ -7,20 +7,32 @@
   align-items: center;
   background: -webkit-linear-gradient(45deg, rgb(3, 3, 2), rgb(238, 238, 147));
   flex-direction: column;
+  margin: 10px;
+  padding: 160px;
+
 }
+
 label{
   display: flex;
   text-align: left;
   padding: 0.20rem 0;
   color: white;
-  width: 140px;
+  width: 300px;
+  font-size: x-large;
 }
-input{
+input {
   margin: 0.25rem;
   padding: 0.25rem;
   border: none;
   border-radius: 5px;
+  width: 300px;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
+
 
 button{
   border: none;
@@ -28,11 +40,13 @@ button{
   padding: 2px;
   border-radius: 5px;
   cursor: pointer;
-  width: 150px;
+  width: 300px;
+  font-size: x-large;
 }
 .btn-link{
   background: none;
   color: white;
+  font-size: larger;
   width: auto;
   text-decoration: underline;
 }
@@ -140,6 +154,12 @@ button{
   .p-cormorant {
     font-size: 37px;
     line-height: 67px;
+    
+
+  }
+  .user-form,.login-form,.register-form{
+    margin: auto;
+    padding: 0;
   }
 
   .p-opensans {
@@ -173,11 +193,19 @@ button{
   .app-wrapper-img img {
     width: 100%;
   }
+  .user-form,.login-form,.register-form{
+    margin: auto;
+    
+  }
 }
 
 @media screen and (max-width: 850px) {
   .section-padding {
     padding: 4rem;
+  }
+  .user-form,.login-form,.register-form{
+    margin: auto;
+   padding: auto;
   }
 }
 
@@ -193,6 +221,10 @@ button{
   .p-opensans {
     font-size: 14px;
   }
+  .user-form,.login-form,.register-form{
+    margin: auto;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -207,5 +239,12 @@ button{
   .headtext-cormorant {
     font-size: 45px;
     line-height: 70px;
+  }
+  .user-form,.login-form,.register-form{
+    margin: auto;
+    padding: 0;
+  }
+  .btn-link{
+    font-size:medium;
   }
 }

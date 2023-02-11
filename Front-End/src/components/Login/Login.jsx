@@ -11,7 +11,7 @@ export const Login = (props) => {
   return (
     <div className="user-form">
       <form className="login-form" onSubmit={handleSubmite}>
-        <label htmlFor="email">email</label>
+        <label htmlFor="email">Email</label>
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -32,7 +32,7 @@ export const Login = (props) => {
         <button>Login</button>
       </form>
       <button className="btn-link" onClick={() => props.onFormSwitch("Register")}>
-        Don't have an account Register here!
+        Don't have an account? Register here!
       </button>
       </div>
   );
