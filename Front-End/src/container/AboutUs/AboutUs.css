@@ -1,0 +1,31 @@
+.app-aboutus {
+    position: relative;
+}
+.app-aboutus-overlay{
+    position: absolute;
+    
+}
+.app-aboutus-content {
+    width: 100%;
+    
+}
+
+.app-aboutus-content-about{
+margin: 2rem 2rem;
+}
+.app-aboutus-content-history{
+    margin: 2rem 2rem;
+}
+
+@media screen and (max-width:2000px) {
+    
+    .app-aboutus-content-history p,.app-aboutus-content-about {
+        margin: 4rem 0;
+    }
+}
+@media screen and (max-width:900px) {
+    .app-aboutus-content{
+        flex-direction: column;
+    }
+    
+}
