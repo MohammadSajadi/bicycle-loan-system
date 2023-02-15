@@ -24,9 +24,9 @@ const getOneReturn = async (req, res) => {
 
 // Create return
 const createReturn = async (req, res) => {
-  const { userId, bikeId, location, returnedAt } = req.body;
+  const { userId, bikeId, locationId, returnedAt } = req.body;
   const returnObj = await prisma.return.create({
-    data: { userId, bikeId, location, returnedAt },
+    data: { userId, bikeId, locationId, returnedAt },
     include: { user: true, bike: true },
   });
   res.json(returnObj);

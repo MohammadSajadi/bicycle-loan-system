@@ -24,9 +24,9 @@ const getOneReservation = async (req, res) => {
 
 // Create reservation
 const createReservation =  async (req, res) => {
-  const { userId, bikeId, status, location } = req.body;
+  const { userId, bikeId, status, locationId } = req.body;
   const reservation = await prisma.reservation.create({
-    data: { userId, bikeId, status, location },
+    data: { userId, bikeId, status, locationId },
     include: { user: true, bike: true },
   });
   res.json(reservation);
