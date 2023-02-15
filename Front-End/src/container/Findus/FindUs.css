@@ -1,0 +1,22 @@
+.app-wrapper-info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-wrapper-content {
+    width: 100%;
+  }
+  
+  .app-wrapper-img {
+    width: 50%;
+  }
+.app-links-icons svg{
+  color:white;
+  margin: 0.5rem;
+  font-size: 25px;
+  cursor: pointer;
+}  
+.app-links-icons svg:hover{
+  color: rgb(221, 172, 51);
+}
