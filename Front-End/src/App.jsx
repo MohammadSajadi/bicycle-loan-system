@@ -1,32 +1,16 @@
-import { AboutUs, FindUs, Footer, Header} from './container';
-import {  Navbar, Login,Register } from './components';
-import './App.css';
-import React, {useState} from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home/Home";
+import { List } from "./pages/lists/List";
+import {Bike} from "./pages/bike/Bike"
 
-
-export const App =()=> {
-const [currentForm,setCurrentForm] = useState ("login")
-
-const toggleForm = (formName)=>{
-  setCurrentForm(formName)
+export function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bikes" element={<List />} />
+        <Route path="/bikes/:id" element={<Bike />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-return(
-  <div className='App'>
-
-    <Navbar />
-    {
-  currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-}
-    <Header />
-    <AboutUs />
-    <FindUs />
-    <Footer />
-    
-    
-  </div>
-)
-};
-
-
-
-
