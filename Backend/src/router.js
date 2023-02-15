@@ -1,41 +1,39 @@
 const express = require('express');
 const router = express.Router();
+const {getAllBikes,getOneBikes,createBike,updateBike,deleteBikes} = require('./handlers/bike')
+const {getAllLocations,getOneLocations,createLocation,updateLocation,deleteLocation} = require('./handlers/location')
+const {getAllReturns,getOneReturn,createReturn,deleteReturn} = require('./handlers/return')
+const {getAllReports,getOneReport,createReport,updateReport,deleteReports} = require('./handlers/report')
+const {getAllReservations,getOneReservation,createReservation,updateReservation,deleteReservation} = require('./handlers/reservation')
 
-router.get("/bikes", (req, res) => {});
-router.get("/bikes/:id", (req, res) => {});
-router.post("/bikes", (req, res) => {});
-router.put("/bikes/:id", (req, res) => {});
-router.delete("/bikes/:id", (req, res) => {});
+router.get("/bike", getAllBikes);
+router.get("/bike/:id", getOneBikes);
+router.post("/bike", createBike);
+router.put("/bike/:id", updateBike);
+router.delete("/bike/:id", deleteBikes);
 
-router.get("/locations", (req, res) => {});
-router.get("/locations/:id", (req, res) => {});
-router.post("/locations", (req, res) => {});
-router.put("/locations/:id", (req, res) => {});
-router.delete("/locations/:id", (req, res) => {});
+router.get("/reservation", getAllReservations);
+router.get("/reservation/:id", getOneReservation);
+router.post("/reservation", createReservation);
+router.put("/reservation/:id", updateReservation);
+router.delete("/reservation/:id", deleteReservation);
 
-router.get("/reservations", (req, res) => {});
-router.get("/reservations/:id", (req, res) => {});
-router.post("/reservations", (req, res) => {});
-router.put("/reservations/:id", (req, res) => {});
-router.delete("/reservations/:id", (req, res) => {});
+router.get("/return", getAllReturns);
+router.get("/return/:id", getOneReturn);
+router.post("/return", createReturn);
+router.delete("/return/:id", deleteReturn);
 
-router.get("/checkout", (req, res) => {});
-router.get("/checkout/:id", (req, res) => {});
-router.post("/checkout", (req, res) => {});
-router.put("/checkout/:id", (req, res) => {});
-router.delete("/checkout/:id", (req, res) => {});
+router.get("/report", getAllReports);
+router.get("/report/:id", getOneReport);
+router.post("/report", createReport);
+router.put("/report/:id", updateReport);
+router.delete("/report/:id", deleteReports);
 
-router.get("/return", (req, res) => {});
-router.get("/return/:id", (req, res) => {});
-router.post("/return", (req, res) => {});
-router.put("/return/:id", (req, res) => {});
-router.delete("/return/:id", (req, res) => {});
-
-router.get("/reports", (req, res) => {});
-router.get("/reports/:id", (req, res) => {});
-router.post("/reports", (req, res) => {});
-router.put("/reports/:id", (req, res) => {});
-router.delete("/reports/:id", (req, res) => {});
+router.get("/location", getAllLocations);
+router.get("/location/:id", getOneLocations);
+router.post("/location", createLocation);
+router.put("/location/:id", updateLocation);
+router.delete("/location/:id", deleteLocation);
 
 
 module.exports = router;
