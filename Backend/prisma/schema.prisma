@@ -75,7 +75,7 @@ model Return {
   bike       Bike     @relation(fields: [bikeId], references: [id])
   bikeId     Int
   location   Location @relation(fields: [locationId], references: [id])
-  returnedAt DateTime
+  returnedAt DateTime @default(now())
   locationId Int
 }
 
