@@ -35,10 +35,10 @@ const createReservation =  async (req, res) => {
 // Update reservation
 const updateReservation =  async (req, res) => {
   const { id } = req.params;
-  const { userId, bikeId, status, location } = req.body;
+  const { userId, bikeId, status, locationId } = req.body;
   const reservation = await prisma.reservation.update({
     where: { id: Number(id) },
-    data: { userId, bikeId, status, location },
+    data: { userId, bikeId, status, locationId },
     include: { user: true, bike: true },
   });
   res.json(reservation);
