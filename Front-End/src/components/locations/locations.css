@@ -1,26 +1,53 @@
-  .locations{
-    width: 100%;
-    max-width: 1024px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    z-index: 1;
-  }
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
-  .locationsItem{
-    position: relative;
-    color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 160px;
+.locations form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-  }
-  .locationsImg{
-    width: 100%;
-    object-fit: cover;
-  }
-  .locationsTitle{
-    position: absolute;
-    bottom: 0px;
-    left: 20px;
+.locations label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+
+.locations input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.locations button[type="submit"] {
+  padding: 10px;
+  background-color: #0077cc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.locations button[type="submit"]:hover {
+  background-color: #005ea6;
 }

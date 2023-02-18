@@ -1,18 +1,18 @@
 import "./Home.css"
 import { Navbar } from "../../components/Navbar/Navbar"
-import { Header } from "../../components/header/Header"
-import { Locations } from "../../components/locations/Locations"
-import { BikeList } from "../../components/bikeList/BikeList"
+// import { Header } from "../../components/header/Header"
+import { AboutUs } from "../../components/AboutUs/AboutUs"
 import{Footer} from "../../components/footer/Footer"
+import {FindUs} from "../../components/Findus/FindUs"
+
 export const Home = () => {
   return (
     <div>
       <Navbar/>
-      <Header/>
-      <div className="homeContainer">
-      <Locations/>
-      <h1 className="bikeTitle"> Brows your bicycle!</h1>
-      <BikeList/>
+      {/* <Header/> */}
+      <AboutUs/>
+      <FindUs/>
+      <div>
       <Footer/>
       </div>
     </div> 

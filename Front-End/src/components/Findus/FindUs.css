@@ -1,22 +1,42 @@
+.app-wrapper {
+  width: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
 .app-wrapper-info {
-    width: 50%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .app-wrapper-content {
-    width: 100%;
-  }
-  
-  .app-wrapper-img {
-    width: 50%;
-  }
-.app-links-icons svg{
-  color:white;
-  margin: 0.5rem;
-  font-size: 25px;
+  width: 80%;
+  padding-left: 4rem;
+}
+.app-wrapper-content{
+  font-size: 30px;
+  color: white;
+}
+
+.app-wrapper-img {
+  width: 50%;
+  padding: 4rem;
+}
+
+.app-wrapper-img img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+.app-links-icons {
+  color: white;
+  font-size: large;
+  display: flex;
+  gap: 10px;
+}
+
+.app-links-icons > * {
   cursor: pointer;
-}  
-.app-links-icons svg:hover{
-  color: rgb(221, 172, 51);
+}
+
+.app-links-icons > *:hover {
+  color: goldenrod;
 }

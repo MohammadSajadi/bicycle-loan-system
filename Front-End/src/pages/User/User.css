@@ -1,0 +1,36 @@
+/* .userPage{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 189, 188);
+    flex-direction: column;
+}
+.registerForm, .userSingin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.userForm,.register{
+    padding: 1rem;
+    border: 1px solid white;
+}
+label{
+    text-align: left;
+}
+input{
+    margin: 0.5rem;
+   
+}
+button {
+    margin: 0.5rem;
+}
+.linkBtn{
+    background-color: rgb(160, 189, 188);
+    text-decoration: underline;
+    font-style: bold;
+    color: black;
+    
+} */
